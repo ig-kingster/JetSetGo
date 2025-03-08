@@ -12,7 +12,7 @@ from bson import ObjectId
 
 
 
-MONGO_URI = "mongodb+srv://mongodbacc:mongodbacc@cluster0.ny1gw.mongodb.net/"
+MONGO_URI = ""
 
 DATABASE_NAME = "db_jetsetgo"
 
