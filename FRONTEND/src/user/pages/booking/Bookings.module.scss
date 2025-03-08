@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #DAEEFF;
+    max-width: 100%;
+    max-height: 100%;
+    .navbar{
+
+    }
+    .sub{
+        display: flex;
+    
+        .sidebar{
+            position: relative;
+        }
+        .main{
+            margin-left: 125px;
+    
+    
+        }
+    }
+    }

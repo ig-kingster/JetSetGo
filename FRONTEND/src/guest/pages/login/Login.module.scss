@@ -1,0 +1,133 @@
+.logform {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-left: -100px;
+    margin-bottom: 50px;
+
+    // background: ;
+    .form {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        margin-top: -200px;
+        margin-left: -100px;
+        margin-bottom: 50px;
+
+        .part1 {
+            display: flex;
+            flex-direction: column;
+            width: 60vh;
+            height: 40vh;
+            border-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            margin-right: 100px;
+            overflow: hidden;
+            .bg{
+                width: 100vh;
+                // opacity: 70%;
+            }
+
+            .img{
+                
+            position: absolute;
+            padding: 50px;
+                color: black;
+            }
+        }
+
+        .part2 {
+            display: flex;
+            flex-direction: column;
+            border-radius: 30px;
+            gap: 20px;
+            padding: 30px;
+            position: absolute;
+            margin-left: 500px;
+            margin-top: -40px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            position: fixed;
+
+.close{
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+
+}
+            .titles {
+                display: flex;
+                justify-content: center;
+
+                .title {
+                    color: #2c73d2;
+                    font-size: 20px;
+
+
+                }
+
+
+            }
+
+            .fields {
+                display: flex;
+                justify-content: center;
+
+                .field {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    width: 60vh;
+                    
+                    .email {
+                   border-radius: 10px;
+                        background-color: whitesmoke;
+                        outline: none;
+                    border: none; 
+                    height: 5vh;
+
+                    }
+
+                    .password {
+                   border-radius: 10px;
+                   background-color: whitesmoke;
+
+                        outline: none;
+                        border: none;
+                        height: 5vh;
+
+                    }
+                }
+            }
+
+            .btn {
+                display: flex;
+                justify-content: center;
+                .submit {
+                  background-color: orange;
+                  border: none;
+                  border-radius: 30px;
+                  color: white;
+                  width: 30vh;
+                  height: 4vh;
+
+
+
+                }
+            }
+
+            .policy {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .policys{
+                font-size: 12px;
+                
+
+
+                }
+            }
+        }
+    }
+
+}

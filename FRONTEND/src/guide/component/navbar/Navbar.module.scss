@@ -1,0 +1,69 @@
+.Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: #ffffff; // Flipkart's signature blue
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
+    .Image {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+      
+      
+    }
+
+
+    .search {
+        display: flex;
+        align-items: center;
+        background-color: #dedede;
+        border-radius: 5px;
+        width: 50%;
+        .txt {
+            border: none;
+            border-radius: 2px 0 0 2px;
+            outline: none;
+            font-size: 1rem;
+            background-color: transparent;
+            width: 100vw;
+
+
+        }
+
+        .btn {
+
+            border: none;
+            color: rgb(2, 2, 2);
+            border-radius: 100%;
+            padding: 10px;
+            background-color: transparent;
+
+        }
+
+    }
+
+
+    .Contact {
+        display: flex;
+        gap: 50px;
+        margin-left: 10%;
+    .Contacts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .ContactIcon{
+            display: flex;
+            align-items: center;
+            .icon{
+            color: #2c73d2;
+
+            }
+        }
+
+    }
+}
+}

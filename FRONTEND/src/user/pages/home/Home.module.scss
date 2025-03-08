@@ -1,0 +1,55 @@
+// Variables
+$primary-color: #2d5c8a;
+$secondary-color: #4ba3c3;
+$background-color: #f8f9fa;
+$text-dark: #2d3436;
+$section-spacing: 4rem;
+
+.container {
+  background: $background-color;
+  overflow-x: hidden;
+}
+
+.mainContent {
+margin-top: 4rem;
+  section {
+    padding: 2rem 0;
+  }
+}
+
+.packagesSection {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  padding: 2rem !important;
+}
+
+.trendingSection {
+  background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  color: white;
+  padding: 3rem 2rem !important;
+  border-radius: 1rem;
+}
+
+.testimonialsSection {
+  background: white;
+  padding: 3rem 2rem !important;
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 1rem;
+    
+    section {
+      margin: 2rem 0;
+      padding: 1rem 0;
+    }
+  }
+  
+  .packagesSection,
+  .trendingSection,
+  .testimonialsSection {
+    padding: 1.5rem !important;
+  }
+}

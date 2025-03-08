@@ -1,0 +1,24 @@
+.chart{
+    flex: 4;
+    color: gray;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    &.dark{
+        box-shadow: rgba(255, 255, 255, 0.19) 0px 10px 20px, rgba(205, 202, 202, 0.23) 0px 6px 6px;
+    }
+    &.light{
+        box-shadow: rgba(255, 255, 255, 0.19) 0px 10px 20px, rgba(205, 202, 202, 0.23) 0px 6px 6px;
+        
+    }
+
+
+    .title{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 25px;
+    }
+
+    .chartGrid{
+        stroke: lightgray;
+    }
+}

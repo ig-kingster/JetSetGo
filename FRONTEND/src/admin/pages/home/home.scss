@@ -1,0 +1,37 @@
+.home{
+    display: flex;
+
+    &.dark{
+        background-color: black;
+        color: white;
+    }
+    &.light{
+        background-color: white;
+    }
+    
+    .homeContainer{
+        flex: 6;
+
+       .widgets, .charts{
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+
+       }
+
+       .charts{
+        padding: 5px 20px;
+        
+       }
+
+       .listContainer{
+
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+       }
+    }
+}
+
+*{
+    margin: 0;
+}

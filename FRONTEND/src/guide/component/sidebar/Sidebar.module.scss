@@ -1,0 +1,147 @@
+.main {
+    display: flex;
+
+    .side {
+        margin-top: 50px;
+        margin-left: 50px;
+
+        .elements {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+            width: 350px;
+
+            .user {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #a2ccf1;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+                padding: 30px;
+
+                .mainname {
+                    display: flex;
+                    gap: 10px;
+
+                    .name {
+                        .username {
+                            color: #2c73d2;
+                            font-weight: bold;
+                            font-size: 20px;
+                        }
+                    }
+
+                    .verify {
+                        color: rgb(103, 255, 103);
+
+
+                        .verified {}
+
+
+
+                    }
+                }
+
+                .jdate {
+                    display: flex;
+                    align-items: center;
+
+                    .badge {
+                        display: flex;
+                        color: gold;
+
+                        .badgeicon {
+                            display: flex;
+
+                            font-size: 20px;
+
+                        }
+
+                    }
+
+                    .dates {
+                        color: gray;
+
+                        .date {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            .element {
+
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                padding: 1rem;
+                border: 1px solid #e0e0e0;
+                border-radius: 8px;
+                transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+
+                &:hover {
+                    background-color: #f1f5fc;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    transform: translateX(3px);
+                }
+
+                .icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: transform 0.3s ease, color 0.3s ease;
+
+
+                    .elementicon {
+                        font-size: 2rem;
+                        /* Adjust size as needed */
+                        color: #6c757d;
+                        /* Neutral color */
+
+                        &:hover {
+                            transform: scale(1.2);
+                            color: #2c73d2;
+                        }
+                    }
+                }
+
+                .title {
+                    display: flex;
+                    flex-direction: column;
+
+                    .elementname {
+                        color: #2c73d2;
+                        cursor: pointer;
+
+                        font-size: 16px;
+                    }
+
+                    .link {
+                        text-decoration: none;
+                        color: #2c73d2;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+
+                    .elementsub {
+                        font-size: 12px;
+                        color: gray;
+
+
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
+
+
+}

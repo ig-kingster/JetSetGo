@@ -1,0 +1,168 @@
+// .trendings {
+//     display: flex;
+//     flex-direction: column;
+//     .heads {
+//         display: flex;
+//         justify-content: center;
+//         font-size: 30px;
+//         margin-left: 20px;
+//         .head {
+//             color: #2c73d2;
+
+//         }
+//     }
+
+//     .trending {
+//         display: flex;
+//         justify-content: center;
+        
+//         .spots {
+//             display: flex;
+
+//             .spot {
+//                 display: flex;
+//                 padding: 20px;
+
+//                 .names {
+//                     display: flex;
+
+//                     .name {
+
+//                         display: flex;
+//                         flex-direction: column;
+
+//                         // .shadow {
+//                         //     height: 200px;
+//                         //     width: 250px;
+//                         //     border-radius: 30px;
+//                         //     position: absolute;
+//                         //     box-shadow: inset -0px -50px 90px -0px black;
+//                         //     opacity: 80%;
+//                         // }
+
+//                         .spotimg {
+//                             height: 200px;
+//                             margin-right: 10px;
+//                             width: 250px;
+//                             border-radius: 30px;
+//                             position: relative;
+//                             z-index: -2;
+
+//                         }
+
+//                         .title {
+//                             display: flex;
+//                             align-items: center;
+//                             justify-content: center;
+//                             color: rgb(0, 0, 0);
+//                             position: relative;
+//                             font-size: 26px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+// }
+
+$overlay-color: rgba(45, 52, 54, 0.6);
+$title-size: 1.5rem;
+
+.trendings {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #2d5c8a 0%, #4ba3c3 100%);
+
+  .heads {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    .head {
+      font-size: 2.5rem;
+      color: white;
+      font-weight: 700;
+    }
+
+    span:last-child {
+      font-size: 2rem;
+      color: rgba(white, 0.9);
+    }
+  }
+
+  .trending {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .spots {
+      .names {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        padding: 0 2rem;
+      }
+
+      .name {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        height: 300px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+          
+          .shadow {
+            opacity: 0.9;
+          }
+
+          .title {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+
+        .shadow {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(transparent, $overlay-color);
+          opacity: 0.7;
+          transition: opacity 0.3s ease;
+        }
+
+        .spotimg {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .title {
+          position: absolute;
+          bottom: 1rem;
+          left: 1rem;
+          color: white;
+          font-size: $title-size;
+          font-weight: 700;
+          transform: translateY(20px);
+          opacity: 0;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .trendings {
+    padding: 2rem 1rem;
+    
+    .heads {
+      .head { font-size: 2rem; }
+      span:last-child { font-size: 1.5rem; }
+    }
+    
+    .name { height: 200px; }
+  }
+}

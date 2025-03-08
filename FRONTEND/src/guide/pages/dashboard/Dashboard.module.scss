@@ -1,0 +1,21 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #DAEEFF;
+    
+    .sub{
+        display: flex;
+    
+        .sidebar{
+            position: relative;
+        }
+        .main{
+            margin-left: 200px;
+    
+    
+        }
+    }
+    }

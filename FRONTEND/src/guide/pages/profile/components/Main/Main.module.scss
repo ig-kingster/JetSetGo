@@ -1,0 +1,312 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    gap: 30px;
+.sub{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+margin-top: 50px;
+gap: 30px;
+
+    .title{
+
+        }
+.name{
+    display: flex;
+
+    .firstname{
+    display: flex;
+    flex-direction: column;
+padding: 10px;
+.fnamelabel{
+    
+}
+    
+    .fnametxt{
+        width: 24vw;
+        height: 4vh;
+
+    }
+}
+.lastname{
+    display: flex;
+    flex-direction: column;
+padding: 10px;
+
+
+.snamelabel{
+    
+}
+    
+    .snametxt{
+        width: 24vw;
+        height: 4vh;
+
+    }
+}
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+
+    .emaillabel{
+
+    }
+.emailtxt{
+    height: 4vh;
+
+
+}
+}
+.phone{
+    display: flex;
+    flex-direction: column;
+padding: 10px;
+
+
+
+    .phonelabel{
+
+    }
+.phonetxt{
+    
+    height: 4vh;
+
+}
+
+
+}
+.dob{
+    display: flex;
+    flex-direction: column;
+padding: 10px;
+
+.doblabel{
+
+}
+.dobtxt{
+    height: 4vh;
+
+}
+
+
+
+}
+.address{
+    display: flex;
+    flex-direction: column;
+padding: 10px;
+
+.addresslabel{
+
+}
+.addresstxt{
+ 
+
+}
+
+
+}
+.location{
+    display: flex;
+    
+    .state{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        .statelabel{
+
+        }
+        .statetxt{
+ 
+            width: 15vw;
+           height: 4vh;
+        }
+
+    }
+    .district{
+        display: flex;
+        flex-direction: column;
+padding: 10px;
+        
+.districtlabel{
+
+}
+.districttxt{
+    width: 15vw;
+    height: 4vh;
+}
+
+
+    }
+    .place{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        .placelabel{
+
+        }
+        .placetxt{
+ 
+            width: 18vw;
+           height: 4vh;
+        }
+
+    }
+}
+.update{
+    display: flex;
+    justify-content: flex-end;
+    .updatebtn{
+        color: white;
+        background-color: rgb(66, 255, 66);
+        border: none;
+        border-radius: 30px;
+    width: 5vw;
+    height: 5vh;
+
+
+    }
+}
+
+}
+.images{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+gap: 30px;
+.profile{
+display: flex;
+flex-direction: column;
+
+    .photolabel{
+
+    
+    }
+    .photolabel1{
+        display: flex;
+        width: 50vw;
+
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        transition: border-color 0.3s ease;
+    .photoicon{
+display: flex;
+align-items: center;
+
+    }
+    .file{
+       
+        display: none;
+        
+    }
+}
+}
+.proof{
+    display: flex;
+    flex-direction: column;
+    .prooflabel{
+
+    }
+    .prooflabel1{
+        width: 50vw;
+
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        transition: border-color 0.3s ease;
+        .prooficon{
+            display: flex;
+            align-items: center;
+        }
+    .file{
+        
+        display: none;
+  
+    }
+}
+}
+
+.update{
+    display: flex;
+    justify-content: flex-end;
+    .updatebtn{
+        color: white;
+        background-color: rgb(66, 255, 66);
+        border: none;
+        border-radius: 30px;
+    width: 5vw;
+    height: 5vh;
+
+
+    }
+}
+
+}
+.password{
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+gap: 30px;
+    .title{
+
+    }
+    .currentpassword{
+        display: flex;
+        flex-direction: column;
+        .currentpswdlbel{
+
+        }
+        .currentpswd{
+            width: 50vw;
+            height: 4vh;
+        }
+    }
+    .newpassword{
+        display: flex;
+flex-direction: column;
+        .newpswdlabel{
+
+        }
+        .newpswd{
+            width: 50vw;
+
+            height: 4vh;
+        }
+    }
+    .update{
+        display: flex;
+        justify-content: flex-end;
+        .updatebtn{
+            color: white;
+            background-color: rgb(66, 255, 66);
+            border: none;
+            border-radius: 30px;
+        width: 5vw;
+        height: 5vh;
+    
+        }
+    }
+}
+
+}

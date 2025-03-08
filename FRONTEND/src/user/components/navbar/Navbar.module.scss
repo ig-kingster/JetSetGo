@@ -1,0 +1,313 @@
+// .Container {
+//     display: flex;
+//     align-items: center;
+//     gap: 10px;
+//     padding: 0.5rem 2rem;
+//     background-color: #ffffff; 
+//     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+//     .Image {
+//         display: flex;
+//         width: 50%;
+//         height: 50px;
+//         padding: 10px;
+  
+      
+//     }
+
+
+//     .search {
+//         display: flex;
+//         align-items: center;
+//         background-color: #dedede;
+//         border-radius: 5px;
+//         width: 50%;
+//         margin-right: 5rem;
+//         .txt {
+//             border: none;
+//             border-radius: 2px 0 0 2px;
+//             outline: none;
+//             font-size: 1rem;
+//             background-color: transparent;
+//             width: 100vw;
+
+
+//         }
+
+//         .btn {
+
+//             border: none;
+//             color: rgb(2, 2, 2);
+//             border-radius: 100%;
+//             padding: 10px;
+//             background-color: transparent;
+
+//         }
+
+//     }
+
+
+      
+//       .profileMenu {
+//         display: flex;
+//         align-items: center;
+//         cursor: pointer;
+//         gap: 10px;
+//         padding: 10px;
+//         border-radius: 8px;
+//         transition: background 0.3s;
+//       }
+      
+//       .profileMenu:hover {
+//         background: #f0f0f0;
+//       }
+      
+//       .profileIcon {
+//         font-size: 24px;
+//         color: #333;
+//       }
+      
+//       .userEmail {
+//         font-size: 14px;
+//         color: #333;
+//         font-weight: bold;
+//       }
+      
+  
+      
+// }
+
+  
+//   .user{
+//     display: flex;
+//     border: 1px solid #2c73d2;
+//     padding: 10px;
+//     border-radius: 5px;
+//     cursor: pointer;
+//   }
+//   .Typography, .user:hover{
+//     background-color: #2c73d2;
+//     color: #dedede;
+//   }
+
+//   // .notificationContainer {
+//   //   display: flex;
+//   //   align-items: center;
+  
+//   //   .MuiIconButton-root {
+//   //     color: #fff; // Adjust color as needed
+//   //     transition: all 0.3s ease;
+  
+//   //     &:hover {
+//   //       background-color: rgba(255, 255, 255, 0.1);
+//   //     }
+//   //   }
+//   // }
+
+  .notificationContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .notificationsWrapper {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+  }
+  
+  .notificationItem {
+    background-color: #ffffff;
+    color: #333;
+    padding: 12px 16px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 250px;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.95;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  // Variables
+$primary-color: #2d3436;
+$secondary-color: #0984e3;
+$hover-color: #74b9ff;
+$background-color: #ffffff;
+$text-color: #2d3436;
+$shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+$border-radius: 8px;
+$transition: all 0.3s ease;
+
+// Main Container
+.Container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: $background-color;
+  box-shadow: $shadow;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 1000;
+  gap: 2rem;
+
+  // Logo Image
+  .Image {
+    flex: 0 0 auto;
+    
+    .logo {
+      height: 50px;
+      width: auto;
+      transition: transform 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  // Search Container
+  .search {
+    flex: 1 1 auto;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .txt {
+      width: 100%;
+      padding: 0.8rem 1.5rem;
+      border: 2px solid darken($background-color, 10%);
+      border-radius: 30px;
+      font-size: 1rem;
+      transition: $transition;
+      padding-right: 3rem;
+
+      &:focus {
+        outline: none;
+        border-color: $secondary-color;
+        box-shadow: 0 0 10px rgba($secondary-color, 0.2);
+      }
+    }
+
+    .btn {
+      position: absolute;
+      right: 15px;
+      background: none;
+      border: none;
+      color: $secondary-color;
+      cursor: pointer;
+      transition: $transition;
+
+      &:hover {
+        color: darken($secondary-color, 15%);
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  // Notification Section
+  .notificationContainer {
+    position: relative;
+    margin-left: auto;
+
+    .MuiBadge-badge {
+      background: $secondary-color !important;
+    }
+
+    .notificationsWrapper {
+      position: absolute;
+      right: 0;
+      top: 50px;
+      background: white;
+      border-radius: $border-radius;
+      box-shadow: $shadow;
+      min-width: 300px;
+      padding: 1rem;
+      z-index: 1000;
+    }
+
+    .notificationItem {
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      background: lighten($secondary-color, 45%);
+      border-radius: 6px;
+      transition: $transition;
+      cursor: pointer;
+
+      &:hover {
+        background: lighten($secondary-color, 40%);
+        transform: translateX(5px);
+      }
+    }
+  }
+
+  // User Profile Section
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: $border-radius;
+    transition: $transition;
+
+    &:hover {
+      background: rgba($secondary-color, 0.1);
+    }
+
+    .MuiMenu-paper {
+      margin-top: 10px;
+      border-radius: $border-radius !important;
+      box-shadow: $shadow !important;
+    }
+
+    .MuiMenuItem-root {
+      font-size: 0.9rem;
+      padding: 0.8rem 1.5rem;
+      transition: $transition;
+
+      &:hover {
+        background: rgba($secondary-color, 0.1);
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+// Animation Keyframes
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+// Media Queries
+@media (max-width: 768px) {
+  .Container {
+    padding: 0 1rem;
+    gap: 1rem;
+
+    .search {
+      .txt {
+        padding: 0.6rem 1rem;
+      }
+    }
+
+    .user {
+      span {
+        display: none;
+      }
+    }
+  }
+}
